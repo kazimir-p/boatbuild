@@ -1,0 +1,950 @@
+/* body */
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+body {
+    color: cornsilk;
+    margin: 0;
+    padding: 0;
+    font-family: 'Play', sans-serif;
+    background: radial-gradient(ellipse at top, #64e0e6, transparent);
+}
+#allContainer {
+    max-width: 1533px;
+    margin: auto;
+}
+a {
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+    color: seashell;
+    cursor: pointer;
+}
+.up {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 25px;
+    margin-top: 15px;
+}
+/* header */
+header {
+    background:url("imgs/plachetka-12\ d.jpg ") top center no-repeat;
+    background-size: 76%;
+    height: 125vh;
+    margin-bottom: 15px;
+}
+header span {
+    font-size: small;
+}
+nav, #logo, #mainHead, #menuCol, #upperNav, .mainHeadContainer {
+    display: flex;
+}
+.menu:hover {
+    background: rgba(95, 158, 160, 0.664);
+}
+#upperNav {
+    width: 100%;
+    justify-content: flex-end;
+}
+.navContainer {
+    position: sticky;
+    top:0;
+    width: 100%;
+    z-index: 1;
+
+}
+nav {
+    width: 100%;
+    background: rgba(184, 135, 11, 0.507);
+    flex-direction: column;
+}
+#logo{
+    justify-content:flex-start;
+    align-items: center;
+    margin-left: 15px;
+    width: 20%;
+}
+#logo span{
+    margin-left: 5px;
+    background: cadetblue;
+    padding: 7px 11px;
+    margin: 0 3px 0 0;
+}
+#logo i {
+    background: chocolate;
+    padding: 16px;
+    color: #fff;
+}
+#logo span:hover {
+    background: rgba(0, 139, 139, 0.39);
+}
+.mainHeadContainer {
+   width: 60%;
+}
+#mainHead {
+    justify-content:center;
+    align-items: center;
+    background: rgba(71, 61, 139, 0.484);
+    padding: 0 10px;
+    height:45px;
+    border: chocolate 2px solid;
+    background: rgba(95, 158, 160, 0.65);
+    color: seashell;
+    margin: auto;
+}
+#mainHead h1 {
+    font-weight: 200;
+    font-size:32px;
+}
+#hamburgerMenuSwitch {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+.hamburgerContainer {
+    display: none;
+}
+.A {
+    margin-top: 3px;
+}
+.menu a:hover {
+    background: rgba(95, 158, 160, 0.464);
+}
+#menuCol {
+    width: 40%;
+    text-align:right;
+    margin: 3px 6px 3px 20px;
+    padding-right: 3px;
+    font-size: small;
+    flex-direction: column;
+}
+.menu {
+    margin: 0 6px 3px 0;
+    padding: 3px 6px;
+    font-size: small;
+    background: cadetblue;
+}
+.hamburger, .logoAlt, #menuRow {
+    display: none;
+}
+.rowCol {
+    flex-direction: row;
+    width: 40%;
+}
+
+/* @media only screen and (max-width: 1000px){ */
+@media only screen and (max-width: 1450px){
+.mainHeadContainer {
+    justify-content: center;
+    align-items: center;
+}
+#mainHead {
+    height: 30px;
+    margin: 5px 0 0 2px;
+}
+#mainHead h1 {
+    font-size:22px;
+}
+.hamburgerContainer {
+    display: flex;
+    justify-content: flex-end;
+}
+#menuCol {
+    display: none;
+}
+#hamburger {
+    display: block;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.653);
+    color: white;
+    font-size: 27px;
+    padding: 8px 8px 5px 8px;
+    margin: 20px 35% 20px 20px ;
+}
+#menuRow.show {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    padding-right: 3px;
+    width: 50%;
+    text-align:center;
+    margin: 0 6px 3px 0;
+    padding-right: 3px;
+    font-size: small;
+    width: auto;
+}
+.menu {
+    width: 60px;
+    margin-top: 2px;
+}
+.logoAlt.show {
+    margin-right: 6px;
+}
+}
+@media only screen and (max-width: 670px) {
+.mainHeadContainer {
+    justify-content: flex-end;
+    width: 80%;
+}
+#mainHead h1 {
+    font-size:18px;
+}
+#hamburger {
+    font-size: 17px;
+    padding: 5px 5px 3px 4px;
+    margin: 10px 35% 10px 0;
+}
+ #logo{
+    display: none;
+}
+#menuCol {
+    flex-direction: row;
+}
+.logoAlt.show {
+    display: block;
+    margin-right: 6px;
+}
+.logoAlt span{
+    background: cadetblue;
+    color: cornsilk;
+    padding: 3px 6px;
+    margin:  3px 0 2px 5px;
+    font-size: small;
+    cursor: pointer;
+}
+.logoAlt i {
+    font-size: 9px;
+    padding: 8px;
+    margin-top: 2px;
+    background: chocolate;
+}
+#hamburgerMenuSwitch {
+    justify-content: end;
+    align-items: center;
+}
+.hamburgerContainer {
+    margin-right: 10%;
+}
+#uppernav {
+    justify-content: space-between;
+}
+#lowerNav {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+#mainHead {
+    margin: 3px 0 0 3px;
+    width: 85%;
+}
+}
+@media only screen and (max-width: 420px){
+.mainHeadContainer {
+   justify-content: flex-end;
+   width: 85%;
+}
+#mainHead {
+    height: 30px;
+    margin: 5px 0 0 2px;
+    width: 100%;
+}
+#mainHead h1 {
+    font-size:17px;
+}
+#hamburgerMenuSwitch {
+    width: 15%;
+}
+.hamburger {
+    margin-top: 5px;
+}
+.menu {
+    width:55px;
+}
+}
+.hero{
+    height: 27px;
+}
+#whenshrink {
+    display: flex;
+    flex-direction: column;
+}
+.raps {
+    background: rgba(95, 158, 160, 0.65);
+    font-family: 'Play', sans-serif;
+    color: #fff;
+    /* height: 150px; */
+    /* height: auto; */
+    padding: 10px;
+    border: 0.5px solid rgba(36, 162, 176, 0.489);
+    margin-right: 20px;
+}
+.raps:hover {
+    cursor: pointer;
+}
+.raps p {
+    margin: 0;
+}
+#switchLangOne {
+    display: block;
+}
+#rapOne {
+    position: absolute;
+    right: 15px;
+    top: 120px;
+    margin: 20px 80px 0 0;
+    /* height: 110px; */
+    width: 300px;
+}
+#meaculpa {
+    width: 17%;
+    margin: 180px 600px 0 20%;
+    font-size: calc(1rem + 2vw);
+    font-family: 'Mea Culpa', cursive;
+    color: rgb(10, 7, 7);
+    background-color: rgba(255, 245, 238, 0.218);
+}
+/* bottom part of header */
+#rapTwo {
+    margin: 230px 0 20px 100px;
+    width: 300px;
+    height: 120px;
+    z-index: 2;
+}
+#listbox {
+    display: flex;
+    position:absolute;
+    right: 85px;
+    bottom: 150px;
+    z-index: 4;
+}
+.headlisttwo {
+    list-style-image: none;
+    list-style-type: square;
+}
+.headlisttwo ul {
+    list-style-image: url(imgs/díra-g.gif);
+}
+.headlisttwo ul li {
+    padding-bottom: 5px;
+ }
+.headlistthree ul {
+     font-size: 16px;
+     font-family: 'Play', sans-serif;
+     color: #fff;
+     margin-top: 18px;
+     padding: 0;
+     width: 150px;
+ }
+ .headlistthree ul li {
+    background: rgba(184, 135, 11, 0.507);
+    border: darkgoldenrod 1px solid;
+    margin: 6px 10px;
+    padding-left: 5px;
+    height: 25px;
+    display: block;
+    list-style-type: none;
+ }
+ .galleryHead {
+    margin:100px auto 50px;
+    width: 50%;
+    font-size: 30px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    background: rgba(202, 55, 29, 0.436);
+    color: seashell;
+}
+@media only screen and (max-width: 1450px){
+#meaculpa {
+    padding-left: 0;
+}
+}
+@media only screen and (max-width: 1065px){
+
+header {
+    background-size: 90%;
+    height: 100vh;
+    margin-bottom: 15px;
+}
+
+#headerMiddle {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#rapOne {
+    left: 15px;
+    top: 220px;
+}
+#meaculpa {
+    margin: 55px 600px 20px 20%;
+}
+#rapTwo {
+    margin: 160px 0 0 200px;
+    width: 300px;
+}
+#listbox {
+    left: 20px;
+    bottom:200px;
+    width: 200px;
+}
+.headlisttwo ul {
+    list-style-image: url(imgs/díra-g_s.gif);
+}
+.headlistthree ul li {
+    margin: 6px 10px;
+    padding-left: 5px;
+    height: 20px;
+    line-height: 22px;
+    width: 120px;
+    font-size: 14px;
+}
+}
+    @media only screen and (max-width: 790px){
+#rapOne {
+    left: 15px;
+    top: 210px;
+}
+#rapTwo {
+    margin: 180px 0 0 200px;
+}
+.galleryHead {
+    font-size: 20px;
+}
+#meaculpa {
+    width: 30%;
+}
+
+}
+@media only screen and (max-width: 650px){
+header {
+    background-size: 95%;
+}
+.headlisttwo ul li {
+    padding-bottom: 5px;
+}
+}
+@media only screen and (max-width: 530px){
+        #listbox {
+    bottom: 50px;
+}
+    #rapTwo {
+    margin: 200px 0 0 15px;
+}
+#rapTwo, #rapOne {
+    font-size: 12px;
+    width: 270px;
+    height: 110px;
+}
+.galleryHead {
+    margin:200px auto 10px;
+}
+}
+@media only screen and (max-width: 430px){
+#meaculpa {
+    margin-top: 40px;
+}
+}
+/* gallery */
+.firstFiveContainer {
+    display: flex;
+}
+.chapterNumberContainer {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chapterNumber-el {
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 29px;
+    background-color: rgba(255, 245, 238, 0.425);
+}
+#gallery {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+#galleryContainer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+#rapThree,#rapFour {
+    margin-left: 5px;
+    height: auto;
+}
+#galleryWholeRight {
+    width: 75%;
+}
+#galleryMain {
+    display: flex;
+}
+.sideGalleryL{
+    margin: 10px 0 0 20px;
+    width: 25%;
+}
+.sideGalleryR {
+    margin: 5px 0 0 8px;
+}
+
+#imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#display-el {
+    color: seashell;
+    font-size: 45px;
+}
+#message-el {
+    position: absolute;
+    padding: 0 15px;
+    margin:5px;
+    background:rgba(156, 155, 155, 0.247);
+}
+.black {
+    color: #000;
+    background:rgba(255, 245, 238, 0.526) ;
+}
+.upperGallery {
+    display: flex;
+    height: 80px;
+}
+.changeImgDisplayAppearance {
+    cursor: pointer;
+    height: 595px;
+    width: 793px;
+    background-color: transparent;
+    background-size:cover;
+}
+img {
+    /* object-fit: contain; */
+    cursor: pointer;
+    margin: 4px;
+}
+.thumb5 {
+    width: 50px;
+    height: 50px;
+}
+.thumb6 {
+    width: 60px;
+    height: 60px;
+}
+.thumb7 {
+    width: 70px;
+    height: 70px;
+}
+#displayScreen {
+    display: none;
+}
+.picFrame {
+    position: relative;
+}
+.imgComment {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+/* @media only screen and (max-width: 1500px){
+    #gallery {
+        height: auto;
+    }
+    
+} */
+@media only screen and (max-width: 1450px){
+#gallery {
+    display: none;
+}
+/* gallery when responsive */
+#displayScreen {
+    display: flex;
+    justify-content: space-around;
+    background:url('imgs/lištaC.jpg');
+    background-size: cover;
+    padding: 20px 0;
+    position: relative;
+    min-height: 100vh;
+}
+#leftContainer {
+    width: 75%;
+    position: relative;
+}
+#imgFrame img{
+    max-height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+/* #imgDisplay-el  {
+ } */
+#buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    color: seashell;
+}
+#buttonContainer i {
+  font-size: x-small;
+}
+#Bprevious, #Bnext {
+    width: 4%;
+    background: rgba(95, 158, 160, 0.65);
+    border:1px solid #ddd;
+    color: seashell;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#textAltDisplay {
+    font-size: 2vw;
+    line-height: 35px;
+    text-align: center;
+}
+#rapContainer {
+    width: 25%;
+}
+#rapSix, #rapSeven {
+    width: 70%;
+    height:auto;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.buttConCase-el, #buttonContainer{
+    height: auto;
+    width: 70%;
+    position: absolute;
+    margin-left: 15%;
+    bottom: 10%;
+    background: rgba(95, 158, 160, 0.65);
+}
+}
+@media only screen and (max-width: 1150px){
+#displayScreen {
+    display: block;
+    padding-bottom: 20px;
+}
+#leftContainer {
+    width: 90%;
+    margin: 20px;
+}
+#rapContainer {
+    width: 90%;
+    display: flex;
+}
+#rapThree, #rapFour {
+    width: 45%;
+    margin-bottom: 20vh;
+    height: 120px;
+}
+#textAltDisplay {
+    font-size: 3vw;
+}
+
+}
+@media only screen and (max-width: 840px){
+    #displayScreen {
+        padding-bottom: 20px;
+    }
+    #rapContainer {
+    display: block;
+}
+    #rapThree, #rapFour {
+    width: 85%;
+}
+}
+@media only screen and (max-width: 540px){
+#rapThree, #rapFour {
+    font-size: 12px;
+    height: 15vh;
+}
+.buttConCase-el, #buttonContainer{
+    width: 80%;
+}
+
+#textAltDisplay {
+    font-size: 4vw;
+}
+}
+
+/* section info*/
+
+#info {
+background: #009999;
+display: flex;
+position: relative;
+}
+/* table */
+#chart {
+    padding: 0 20px 0 0;
+    color: seashell;
+}
+#chart h2 {
+    text-align: center;
+}
+table{
+    width: 650px;
+    text-align: center;
+    margin:0 25px;
+    border-collapse: collapse;
+}
+th{
+    background: darkseagreen;
+}
+td, th{
+    padding: 3px 3px;
+    border:2px solid #009999;
+}
+.formrowcolor{
+    background: rgba(0, 206, 209, 0.719);
+}
+#workhours {
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+/* text */
+.text {
+    background: rgba(255, 255, 255, 0.574);
+    margin: 10px 30px 30px 30px;
+    padding: 20px;
+    color: seashell;
+    font-size: 20px;
+}
+#rapFive {
+    margin: 10px 30px 30px 30px;
+    padding: 20px;
+}
+/* map */
+#map {
+    padding: 30px;
+}
+#mapAlt {
+    display: none;
+     }
+
+/* countdown */
+#countdown {
+    border: 1px solid #fff;
+    width:500px;
+    height: 100px;
+    margin-top: 10px;
+    text-align: center;
+    color: seashell;
+}
+#time-left {
+    font-size: 30px;
+}
+#break {
+    display: none;
+}
+/* contact-form */
+#contact {
+    margin: 20px 0 20px 50px;
+    padding: 0;
+    width: 600px;
+    height: 320px;
+    border: 1px solid #fff;
+}
+.f {
+    text-align: center;
+}
+.container {
+    width: auto;
+}
+.f h2 {
+    padding: 15px 0;
+    margin: 0;
+}
+.f input[type="text"],
+.f textarea {
+    display: block;
+    font-size: 16px;
+    width: 70%;
+    margin: 0 auto 5px;
+    border: 1px solid#dfdfdf;
+}
+.f textarea {
+    height: 120px;
+}
+.f input[type="submit"] {
+    font-size: 15px;
+    background: #48f21d;
+    color: #fff;
+    padding: 7px 15px;
+    margin: px 0;
+    border: 2px solid #dfdfdf;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    letter-spacing: 3px;
+}
+.f input[type="submit"]:hover {
+    color: #dfdfdf;
+    background: transparent;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1400px){
+#info {
+   flex-direction: column-reverse;
+   padding-bottom: 20px;
+}
+.vertical {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#map {
+    margin: auto;
+}
+.text {
+    width: 55vw;
+    margin:auto;
+}
+#chart h2{
+    margin:30px auto 5px;
+}
+table {
+    margin:  10px auto 30px;
+    width: 100%;
+}
+#countdown {
+    margin:  10px auto;
+}
+#contact {
+    margin:30px auto;
+    width: 100%;
+}
+
+}
+@media only screen and (max-width: 730px){
+.vertical {
+    width: 90%;
+}
+#countdown {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+}
+#map {
+   display: none;
+    }
+#mapAlt {
+   margin: 2%;
+   display: flex;
+   justify-content: center;
+}
+.text {
+    width: 75vw;
+    margin:auto;
+}
+
+}
+@media only screen and (max-width: 440px){
+#streight{
+    display: none;
+}
+#break {
+    display: block;
+    font-size: 18px;
+}
+#chart {
+    font-size: smaller;
+}
+}
+    /*footer*/
+
+footer{
+    background: #48f21d96;
+    position: relative;
+}
+#noha {
+    display: flex;
+    font-size: 10vw;
+    letter-spacing: 12px;
+    line-height: 220px;
+    color: rgb(13, 128, 122);
+    justify-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+.seclistone {
+    display: flex;
+    align-items:center;
+    padding: 30px 125px;
+}
+#construction, #carrotContainer {
+    width: 100%;
+}
+#construction {
+    display: flex;
+    font-size: 28px;
+    justify-content: end;
+}
+#carrotContainer {
+    display: flex;
+}
+#name {
+    display: flex;
+    justify-content: end;
+}
+#myName {
+    display: flex;
+    font-size: 22px;
+    color: rgb(97, 95, 95);
+    margin-left: 6px;
+    align-items: center;
+}
+#name i {
+    background: chocolate;
+    padding: 16px;
+    color: #fff;
+}
+#blueArrow {
+    color: #009999;
+}
+@media only screen and (max-width: 1410px){
+#noha {
+    line-height: 150px;
+}
+.seclistone {
+    flex-direction: column;
+    padding-left: 12%;
+}
+#construction {
+    justify-content: start;
+}
+
+}
+
+@media only screen and (max-width: 1030px){
+#noha {
+    line-height: 140px;
+}
+
+}
+@media only screen and (max-width: 830px){
+#noha {
+    line-height: 100px;
+    font-size: 8vw;
+    padding: 0 2%;
+}
+.seclistone {
+    padding-left: 13%;
+}
+
+}
+@media only screen and (max-width: 550px) {
+    #construction {
+    font-size: 5vw;
+   }
+   #name span{
+    line-height: 20px;
+    font-size: 18px;
+}
+
+}
