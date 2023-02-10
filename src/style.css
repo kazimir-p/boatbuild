@@ -9,6 +9,7 @@ body {
     font-family: 'Play', sans-serif;
     background: radial-gradient(ellipse at top, #64e0e6, transparent);
 }
+/* reason for this container: */
 #allContainer {
     max-width: 1533px;
     margin: auto;
@@ -273,11 +274,32 @@ nav {
     font-family: 'Play', sans-serif;
     color: #fff;
     /* height: 150px; */
-    /* height: auto; */
     padding: 10px;
     border: 0.5px solid rgba(36, 162, 176, 0.489);
     margin-right: 20px;
 }
+
+#rapOne {
+    position: absolute;
+    right: 15px;
+    top: 120px;
+    margin: 20px 80px 0 0;
+    /* height: 110px; */
+    width: 300px;
+}
+
+#rapTwo {
+    margin: 230px 0 20px 100px;
+    width: 300px;
+    height: 120px;
+    z-index: 2;
+}
+
+#rapThree,#rapFour {
+    margin-left: 5px;
+    height: auto;
+}
+
 .raps:hover {
     cursor: pointer;
 }
@@ -287,14 +309,7 @@ nav {
 #switchLangOne {
     display: block;
 }
-#rapOne {
-    position: absolute;
-    right: 15px;
-    top: 120px;
-    margin: 20px 80px 0 0;
-    /* height: 110px; */
-    width: 300px;
-}
+
 #meaculpa {
     width: 17%;
     margin: 180px 600px 0 20%;
@@ -304,12 +319,6 @@ nav {
     background-color: rgba(255, 245, 238, 0.218);
 }
 /* bottom part of header */
-#rapTwo {
-    margin: 230px 0 20px 100px;
-    width: 300px;
-    height: 120px;
-    z-index: 2;
-}
 #listbox {
     display: flex;
     position:absolute;
@@ -444,9 +453,67 @@ header {
 }
 }
 /* gallery */
-.firstFiveContainer {
+
+#gallery {
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+#galleryContainer {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.sideGalleryL{
+    margin: 10px 0 0 20px;
+    width: 25%;
+}
+
+#galleryWholeRight {
+    width: 75%;
+}
+
+.upperGallery {
+    display: flex;
+    height: 80px;
+}
+
+#galleryMain {
     display: flex;
 }
+
+#display-el {
+    color: seashell;
+    font-size: 45px;
+}
+
+.changeImgDisplayAppearance {
+    cursor: pointer;
+    height: 595px;
+    width: 793px;
+    background-color: transparent;
+    background-size:cover;
+}
+
+#message-el {
+    position: absolute;
+    padding: 0 15px;
+    margin:5px;
+    background:rgba(156, 155, 155, 0.247);
+}
+
+.sideGalleryR {
+    margin: 5px 0 0 8px;
+}
+
+#imgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .chapterNumberContainer {
     width: 50px;
     height: 50px;
@@ -463,67 +530,12 @@ header {
     line-height: 29px;
     background-color: rgba(255, 245, 238, 0.425);
 }
-#gallery {
-    height: 100vh;
-    background-size: cover;
-    position: relative;
-}
-#galleryContainer {
-    margin-top: 5px;
+
+.firstFiveContainer {
     display: flex;
-    justify-content: center;
-}
-#rapThree,#rapFour {
-    margin-left: 5px;
-    height: auto;
-}
-#galleryWholeRight {
-    width: 75%;
-}
-#galleryMain {
-    display: flex;
-}
-.sideGalleryL{
-    margin: 10px 0 0 20px;
-    width: 25%;
-}
-.sideGalleryR {
-    margin: 5px 0 0 8px;
 }
 
-#imgContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#display-el {
-    color: seashell;
-    font-size: 45px;
-}
-#message-el {
-    position: absolute;
-    padding: 0 15px;
-    margin:5px;
-    background:rgba(156, 155, 155, 0.247);
-}
-.black {
-    color: #000;
-    background:rgba(255, 245, 238, 0.526) ;
-}
-.upperGallery {
-    display: flex;
-    height: 80px;
-}
-.changeImgDisplayAppearance {
-    cursor: pointer;
-    height: 595px;
-    width: 793px;
-    background-color: transparent;
-    background-size:cover;
-}
 img {
-    /* object-fit: contain; */
     cursor: pointer;
     margin: 4px;
 }
@@ -539,23 +551,24 @@ img {
     width: 70px;
     height: 70px;
 }
-#displayScreen {
-    display: none;
-}
+
 .picFrame {
     position: relative;
+}
+
+.black {
+    color: #000;
+    background:rgba(255, 245, 238, 0.526) ;
 }
 .imgComment {
     position: absolute;
     top: 50px;
     left: 30px;
 }
-/* @media only screen and (max-width: 1500px){
-    #gallery {
-        height: auto;
-    }
-    
-} */
+#displayScreen {
+    display: none;
+}
+
 @media only screen and (max-width: 1450px){
 #gallery {
     display: none;
@@ -579,8 +592,6 @@ img {
     width: 100%;
     object-fit: cover;
 }
-/* #imgDisplay-el  {
- } */
 #buttonContainer {
     display: flex;
     justify-content: space-between;
