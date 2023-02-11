@@ -15,36 +15,51 @@ hamburgerButton.addEventListener('click', toggleButton)
 
 //IMG GALLERY
 
-//making place to display blownUp picts
-const changeImgDisplay = document.createElement('div')
-// const changeImgDisplayTwo = document.createElement('div')
-//find it a space to appear
-const displayContainer = document.querySelector('#display-el')
-//give it appearance via class
-changeImgDisplay.classList.add('changeImgDisplayAppearance')
-// changeImgDisplayTwo.classList.add('changeImgDisplayAppearance2')
-//"adopt it"
-displayContainer.appendChild(changeImgDisplay)
 
-//messageContainer to display message inside of img
-const messageContainer = document.querySelector('#message-el')// 
-changeImgDisplay.appendChild(messageContainer)
+
+
+
+
 
 
 //default image for whole screen and for the image display element
-changeImgDisplay.style.backgroundImage = "url('src/imgs/lištaC.jpg')"
-const galleryEl = document.getElementById('gallery')
-galleryEl.style.backgroundImage = "url('src/imgs/lištaC.jpg')"
+// changeImgDisplay.style.backgroundImage = "url('src/imgs/lištaC.jpg')"
+// const galleryEl = document.getElementById('gallery')
+// galleryEl.style.backgroundImage = "url('src/imgs/lištaC.jpg')"
+
+
+// function displayImg(showImg){
+//   changeImgDisplay.style.backgroundImage = "url('" + showImg.src + "')"
+
+//   messageContainer.innerHTML = showImg.alt; 
+ 
+// }
+
+//from pictureSizing
+const displayContainer =  document.querySelector('#display-el')
+
 
 
 function displayImg(showImg){
-  changeImgDisplay.style.backgroundImage = "url('" + showImg.src + "')"
+  displayContainer.style.backgroundImage = "url('" + showImg.src + "')"
 
   messageContainer.innerHTML = showImg.alt; 
  
 }
 
 
+
+//messageContainer to display message inside of img
+const messageContainer = document.querySelector('#message-el') 
+displayContainer.appendChild(messageContainer)
+
+//default image for whole screen and for the image display element
+displayContainer.style.backgroundImage = "url('src/imgs/lištaC.jpg')"
+const galleryEl = document.getElementById('gallery')
+galleryEl.style.backgroundImage = "url('src/imgs/lištaC.jpg')"
+
+
+ 
 //HOVER FRAMES ON picts 
  const images = document.getElementsByClassName("x");
 for(let i = 0; i < images.length; i++){

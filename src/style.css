@@ -295,9 +295,21 @@ nav {
     z-index: 2;
 }
 
+#rapThree {
+    margin: 15px 0;
+    }
+    
+    #rapFour {
+      min-width: 200px;
+      margin-bottom: 20px;
+    }
+    
 #rapThree,#rapFour {
-    margin-left: 5px;
-    height: auto;
+    /* margin-left: 5px;
+    height: auto; */
+    font-size: 14px;
+    min-width: 250px;
+  
 }
 
 .raps:hover {
@@ -457,45 +469,67 @@ header {
 #gallery {
     height: 100vh;
     background-size: cover;
-    position: relative;
-}
-
-#galleryContainer {
-    margin-top: 5px;
     display: flex;
-    justify-content: center;
 }
 
 .sideGalleryL{
-    margin: 10px 0 0 20px;
     width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+    padding: 0 0 20px 10px;
 }
 
+.sideGalleryL img {
+    width: 90%;
+    object-fit: contain;
+  }
+  
 #galleryWholeRight {
     width: 75%;
+    display: block;
+position: relative;
 }
 
 .upperGallery {
     display: flex;
-    height: 80px;
+    align-items: center;
+    padding: 10px;
+    position: relative;
 }
 
+.upperGallery img{
+    width: 75%;
+  }
+  
 #galleryMain {
     display: flex;
+    height: 400px;
 }
+
+#displayContainer {
+    /* margin: 0 100px;
+    background-color: greenyellow;
+    height: 100%;
+    width: 100%; */
+    margin: 0 10px;
+    /* height: 100%; */
+    width: 100%;
+  
+  }
 
 #display-el {
     color: seashell;
     font-size: 45px;
+    height: 595px;
+    width: 100%;
+    background-color: transparent;
+    background-size:contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
-.changeImgDisplayAppearance {
-    cursor: pointer;
-    height: 595px;
-    width: 793px;
-    background-color: transparent;
-    background-size:cover;
-}
+  
 
 #message-el {
     position: absolute;
@@ -505,24 +539,38 @@ header {
 }
 
 .sideGalleryR {
-    margin: 5px 0 0 8px;
-}
-
-#imgContainer {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    width: 40%;
 }
 
-.chapterNumberContainer {
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.sideGalleryR img {
+    width: 90%;
+    object-fit: contain;
+   }
+  
+   .sideGalleryR .picContainer {
+    margin-bottom: 30px;
+   
+   }
+
+.picContainer {
+    width: 25%;
+    height: 10%;
+    margin-bottom: 10px;
+  
+
 }
-.chapterNumber-el {
+.chapterContainer {
+position: relative;
+}
+
+.chapterContainer, .upContainer{
+    width: 25%;
+}
+
+.number {
+    position: absolute;
     height: 30px;
     width: 30px;
     font-size: 30px;
@@ -530,46 +578,81 @@ header {
     line-height: 29px;
     background-color: rgba(255, 245, 238, 0.425);
 }
+.el1 {
+    bottom: -5px;
+    left: 5px;
+}
+.el2 {
+    top: 0;
+    left: 15px;
+}
+.el3 {
+    top: -7px;
+    left: 3px;
+}
 
-.firstFiveContainer {
+
+
+/* .r {
+    background-size:cover;
+    width:100%;
+} not in source*/
+
+/* #imgContainer {
     display: flex;
-}
+    flex-wrap: wrap;
+    flex-direction: column;
+} */
 
-img {
-    cursor: pointer;
-    margin: 4px;
-}
-.thumb5 {
-    width: 50px;
-    height: 50px;
-}
-.thumb6 {
-    width: 60px;
-    height: 60px;
-}
-.thumb7 {
-    width: 70px;
-    height: 70px;
-}
-
-.picFrame {
-    position: relative;
-}
-
+  
+/* #display-el img{
+    background-size:cover;
+    width:100%;
+}not in source */
 .black {
     color: #000;
     background:rgba(255, 245, 238, 0.526) ;
+}
+/* .changeImgDisplayAppearance img {
+    background-size:cover;
+    width:100%;
+    display: block;not in source
+} */
+img {
+    /* object-fit: contain; */
+    cursor: pointer;
+    margin: 4px;
+}
+.w1, .w2, .w3, .a, .picContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .w1 {
+    max-width: 75%;
+  }
+  
+  .w2 {
+    max-width: 80%;
+  }
+  
+  .w3 {
+    max-width: 85%px;
+  }
+  
+#displayScreen {
+    display: none;
+}
+.picFrame {
+    position: relative;
 }
 .imgComment {
     position: absolute;
     top: 50px;
     left: 30px;
 }
-#displayScreen {
-    display: none;
-}
-
-@media only screen and (max-width: 1450px){
+@media only screen and (max-width: 1300px){
 #gallery {
     display: none;
 }
