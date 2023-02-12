@@ -133,8 +133,7 @@ nav {
     width: 40%;
 }
 
-/* @media only screen and (max-width: 1000px){ */
-@media only screen and (max-width: 1450px){
+@media only screen and (max-width: 1300px){
 .mainHeadContainer {
     justify-content: center;
     align-items: center;
@@ -591,33 +590,10 @@ position: relative;
     left: 3px;
 }
 
-
-
-/* .r {
-    background-size:cover;
-    width:100%;
-} not in source*/
-
-/* #imgContainer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-} */
-
-  
-/* #display-el img{
-    background-size:cover;
-    width:100%;
-}not in source */
 .black {
     color: #000;
     background:rgba(255, 245, 238, 0.526) ;
 }
-/* .changeImgDisplayAppearance img {
-    background-size:cover;
-    width:100%;
-    display: block;not in source
-} */
 img {
     /* object-fit: contain; */
     cursor: pointer;
