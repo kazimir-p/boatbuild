@@ -276,6 +276,7 @@ nav {
     padding: 10px;
     border: 0.5px solid rgba(36, 162, 176, 0.489);
     margin-right: 20px;
+    font-size: 16px;
 }
 
 #rapOne {
@@ -298,7 +299,7 @@ nav {
     margin: 15px 0;
     }
     
-    #rapFour {
+#rapFour {
       min-width: 200px;
       margin-bottom: 20px;
     }
@@ -306,9 +307,9 @@ nav {
 #rapThree,#rapFour {
     /* margin-left: 5px;
     height: auto; */
-    font-size: 14px;
+    /* font-size: 14px; */
     min-width: 250px;
-  
+    margin-bottom: 25px;
 }
 
 .raps:hover {
@@ -492,13 +493,13 @@ position: relative;
 
 .upperGallery {
     display: flex;
-    align-items: center;
+    align-items:baseline;
     padding: 10px;
     position: relative;
 }
 
 .upperGallery img{
-    width: 75%;
+    width: 95%;
   }
   
 #galleryMain {
@@ -507,14 +508,8 @@ position: relative;
 }
 
 #displayContainer {
-    /* margin: 0 100px;
-    background-color: greenyellow;
-    height: 100%;
-    width: 100%; */
     margin: 0 10px;
-    /* height: 100%; */
     width: 100%;
-  
   }
 
 #display-el {
@@ -527,8 +522,6 @@ position: relative;
     background-repeat: no-repeat;
     cursor: pointer;
 }
-
-  
 
 #message-el {
     position: absolute;
@@ -546,19 +539,16 @@ position: relative;
 .sideGalleryR img {
     width: 90%;
     object-fit: contain;
-   }
+}
   
-   .sideGalleryR .picContainer {
+.sideGalleryR .picContainer {
     margin-bottom: 30px;
-   
-   }
+}
 
 .picContainer {
     width: 25%;
     height: 10%;
     margin-bottom: 10px;
-  
-
 }
 .chapterContainer {
 position: relative;
@@ -787,6 +777,8 @@ td, th{
 #rapFive {
     margin: 10px 30px 30px 30px;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.384);
+    color: #fff;
 }
 /* map */
 #map {

@@ -111,51 +111,51 @@ timerId = setInterval(countDown, second)
 const boxA = document.getElementById('rapOne');
 
 boxA.addEventListener('mouseover', function handleMouseOver() {
-  boxA.innerText = 'REPEAR of sailboat class europe wich rotted by the pond for long time, started few years from the moment our friends gave it to us "for the transport fee".first there was few more years of doubt that there is sence in such endeavor, then creepy repear started... ';
+  boxA.innerText = "some time ago friends gave us a small sailboat thay had lying by the pond. for a long time we hesitated if we should try to repair it, then we kind of forgot about the whole thing. but then one day the crawly work begun";
 });
 
 boxA.addEventListener('mouseout', function handleMouseOut() {
-  boxA.innerText = 'rekonstrukce plachetky třídy EUROPA, dlouho tlejicí u rybníka, začala pár let od kdy byla kamarády darována "za odvoz". po dalších pár letech váhání zda to má vůbec cenu, začala plíživá oprava...';
+  boxA.innerText = 'před časem nám kamarádi darovali plachetničku, kterou měli odloženou u rybníka. dlouho jsme váhali, zda se do její opravy máme pouštět, než jsme na celou věc trochu zapomněli. jednoho dne však začala plíživá práce...';
 });
 
 const boxB = document.getElementById('rapTwo');
 
 boxB.addEventListener('mouseover', function handleMouseOver() {
-  boxB.innerText = 'what originally supposed to be just minor repair of few visible damaged bits, ended with diggin deep in rotten plywood, re-creating parts, learning on the way...';
+  boxB.innerText = 'what originally supposed to be just minor repair of a few visibly damaged bits, ended up diggin deep in rotten plywood, re-creating parts, learning on the way...';
 });
 
 boxB.addEventListener('mouseout', function handleMouseOut() {
-  boxB.innerText = 'TO co původně měla bít jen víměna pár viditelně chibějicích kousků dřeva, skončilo vrtáním se do zhnilé překližky, renovováním součástek, průběžně se učejíc... ';
+  boxB.innerText = 'to, co původně měla být jen výměna pár viditelně poškozených částí, skončilo vrtáním se v shnilé překližce, renovováním dílů, učením se za pochodu ';
 });
 
 const boxC = document.getElementById('rapThree');
 
-boxC.addEventListener('mouseover', function handleMouseOver() {boxC.innerText = "I didn'\t want to just quickly fill some holes and put the boat on water as soon as possible 'so we can have fun with it before it breakes'. however, repairing  it completely meant long and lonely road.";
+boxC.addEventListener('mouseover', function handleMouseOver() {boxC.innerText = "I didn´t want to just fill in some holes and put the boat on water as soon as possible 'so we can have fun before it sinks'. but, repairing  it completely meant long and lonely road.";
 });
 
 
 boxC.addEventListener('mouseout', function handleMouseOut() {
-  boxC.innerText = 'NECHTĚL jsem aby to dopadlo jenom rychlím zaplátováním pár děr a spouštěním lodky na voduco nejdříve "abychom si lod užili než se rozpadne". avšak zevrubní oprava se ukázala bít dlouhou, osamělou cestou... ';
+  boxC.innerText = 'nechtěl jsem jen zazáplatovat pár děr a spustit plachetku na vodu co nejdřív, "abychom si užili, než se rozpadne". avšak zevrubná oprava znamenala dlouhou, osamělou cestu... ';
 });
 
 const boxD = document.getElementById('rapFour');
 
 boxD.addEventListener('mouseover', function handleMouseOver() {
-  boxD.innerText ="...the boat (has been)was slowly transforming (transformed)from wrack towards beautifull shape it once used to be in. the outcome is bit rough and unprecise. maybe because I'\m not really a boatbuilder. Yet? ";
+  boxD.innerText ="the boat has been slowly transformed from wrack towards beautiful shape it once used to be in. the outcome is bit rough and unprecise.maybe because I am not really a boatbuilder. yet. ";
 });
 
  
 boxD.addEventListener('mouseout', function handleMouseOut() {
-  boxD.innerText = "LOD' se pomalu přeměňovala z vraku do krásného tvarů který kdysy měla. výsledek je přecy trochu neohrabaný a nepřesný. možná protože nejsem doopravdy stavitel lodí. zatím?";
+  boxD.innerText = "loď se pomalu přeměňovala z vraku do krásného tvaru, který kdysi měla. výsledek je trochu neohrabaný a nepřesný. možná proto, že nejsem doopravdy stavitel lodí. zatím.";
 });
 const boxE = document.getElementById('rapFive');
    
 boxE.addEventListener('mouseover', function handleMouseOver() {
-  boxE.innerText = "there are few things left to be done. do something else could occur to slow everithing down.anyway I dare say that it could be ready for next season. there is even a roughly chosen date for ocasion, but I'll try to make it. some sort of presentation is in order, hopefully with (porinuće), maby even with name - it showed to be trickiest part. well let you know...";
+  boxE.innerText = "there are few things left to be done. though something else could occur to slow everything down. anyway I dare say that it could be ready for the summer. there is even a roughly chosen date for the occasion. some sort of presentation is in order, hopefully with lounching. we'll let you know...";
 });
 
 boxE.addEventListener('mouseout', function handleMouseOut() {
-  boxE.innerText = 'zbylo ještě pár věcí na dotažení, y když, určitě se vynoří něco co celou věc zpomalí. přeci jen troufnu se říct že je to na spadnutí příští sezony. určil jsem i datum, sice od boku ale budu se snažit stihnout to. uděláme slavnosní ukázku lodí a snad jí dame na vodu také.budé mít i jméno které se zdá být nejpalčivější ůkol. dám o tom vědět...';
+  boxE.innerText = 'zbylo ještě dotáhnout pár věcí a pak se určitě "nečekaně" vynoří pár dalších. ale přeci jen troufnu si říct, že je to na spadnutí začátkem léta. odpočítává se datum, sice určený od boku, ale snaha to stihnout je (patrná). uděláme ukázku lodi a snad jí taky i dáme na vodu...';
 });
 const boxF = document.getElementById('rapSix');
    
@@ -169,7 +169,7 @@ boxF.addEventListener('mouseout', function handleMouseOut() {
 const boxG = document.getElementById('rapSeven');
    
 boxG.addEventListener('mouseover', function handleMouseOver() {
-  boxG.innerText = "...the boat was slowly transforming (transformed itself, has been transformed)from wrack towards beautifull shape it once used to be in. the outcome is bit rough and unprecise. maybe because I'\m not really a boatbuilder. Yet. ";
+  boxG.innerText = "...the boat was slowly transforming (transformed itself, has been transformed)from wrack towards beautifull shape it once used to be in. the outcome is bit rough and unprecise. maybe because I'm not really a boatbuilder. Yet. ";
 });
 
 boxG.addEventListener('mouseout', function handleMouseOut() {
