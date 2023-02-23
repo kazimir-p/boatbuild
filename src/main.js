@@ -160,20 +160,20 @@ boxE.addEventListener('mouseout', function handleMouseOut() {
 const boxF = document.getElementById('rapSix');
    
 boxF.addEventListener('mouseover', function handleMouseOver() {
-  boxF.innerText = "I didn'\t want to just quickly fill some holes and put the boat on water as soon as possible 'so we can have fun with it before it breakes'. however, repairing  it completely meant long and lonely road.";
+  boxF.innerText = "I didn´t want to just fill in some holes and put the boat on water as soon as possible 'so we can have fun before it sinks'. but, repairing  it completely meant long and lonely road.";
 });
 
 boxF.addEventListener('mouseout', function handleMouseOut() {
-  boxF.innerText = 'NECHTĚL jsem aby to dopadlo jenom rychlím zaplátováním pár děr a spouštěním lodky na voduco nejdříve "abychom si lod užili než se rozpadne". avšak zevrubní oprava se ukázala bít dlouhou, osamělou cestou... ';
+  boxF.innerText = 'nechtěl jsem jen zazáplatovat pár děr a spustit plachetku na vodu co nejdřív, "abychom si užili, než se rozpadne". avšak zevrubná oprava znamenala dlouhou, osamělou cestu... ';
 });
 const boxG = document.getElementById('rapSeven');
    
 boxG.addEventListener('mouseover', function handleMouseOver() {
-  boxG.innerText = "...the boat was slowly transforming (transformed itself, has been transformed)from wrack towards beautifull shape it once used to be in. the outcome is bit rough and unprecise. maybe because I'm not really a boatbuilder. Yet. ";
+  boxG.innerText = "the boat has been slowly transformed from wrack towards beautiful shape it once used to be in. the outcome is bit rough and unprecise.maybe because I am not really a boatbuilder. yet. ";
 });
 
 boxG.addEventListener('mouseout', function handleMouseOut() {
-  boxG.innerText = 'Lorem lod se pomalu přeměňovala z vraku do krásného tvarů který kdysy měla. výsledek je přecy trochu neohrabaný a nepřesný. možná protože nejsem doopravdy stavitel lodí. zatím.  ';
+  boxG.innerText = "loď se pomalu přeměňovala z vraku do krásného tvaru, který kdysi měla. výsledek je trochu neohrabaný a nepřesný. možná proto, že nejsem doopravdy stavitel lodí. zatím.";
 });
 
     //  GALLERY WHEN RESPONSIVE
