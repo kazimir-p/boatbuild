@@ -31,7 +31,7 @@ a {
 header {
     background:url("imgs/plachetka-12\ d.jpg ") top center no-repeat;
     background-size: 76%;
-    height: 125vh;
+    min-height: 100vh;
     margin-bottom: 15px;
 }
 header span {
@@ -132,8 +132,12 @@ nav {
     flex-direction: row;
     width: 40%;
 }
-
-@media only screen and (max-width: 1300px){
+@media only screen and (max-width:1450px ){
+.header {
+    min-height: 100vh;
+}
+}
+@media only screen and (max-width:1300px ){
 .mainHeadContainer {
     justify-content: center;
     align-items: center;
@@ -192,7 +196,7 @@ nav {
 #hamburger {
     font-size: 17px;
     padding: 5px 5px 3px 4px;
-    margin: 10px 35% 10px 0;
+    margin: 10px 35% 10px 12px;
 }
  #logo{
     display: none;
@@ -261,6 +265,15 @@ nav {
     width:55px;
 }
 }
+/* header responsive change */
+
+#meaAndMiddle,#lowerHeaderAndListBox {
+display: flex;
+}
+#meaCulpaContainer, #headerMiddle, #lowerHeader, #listbox {
+width: 50%;    
+}
+/* end */
 .hero{
     height: 27px;
 }
@@ -279,15 +292,12 @@ nav {
 }
 
 #rapOne {
-    position: absolute;
-    right: 15px;
-    top: 120px;
-    margin: 20px 80px 0 0;
     width: 300px;
+    margin-left: 40%;
 }
 
 #rapTwo {
-    margin: 230px 0 20px 100px;
+    margin: 32% 0 20px 100px;
     width: 300px;
     height: 120px;
     z-index: 2;
@@ -296,16 +306,13 @@ nav {
 #rapThree {
     margin: 15px 0;
     }
-    
+
 #rapFour {
       min-width: 200px;
       margin-bottom: 20px;
     }
-    
+
 #rapThree,#rapFour {
-    /* margin-left: 5px;
-    height: auto; */
-    /* font-size: 14px; */
     min-width: 250px;
     margin-bottom: 25px;
 }
@@ -321,8 +328,7 @@ nav {
 }
 
 #meaculpa {
-    width: 17%;
-    margin: 180px 600px 0 20%;
+    margin:   20% 30% 0 40%;
     font-size: calc(1rem + 2vw);
     font-family: 'Mea Culpa', cursive;
     color: rgb(10, 7, 7);
@@ -331,9 +337,8 @@ nav {
 /* bottom part of header */
 #listbox {
     display: flex;
-    position:absolute;
-    right: 85px;
-    bottom: 150px;
+    justify-content: end;
+    padding: 30px 80px 0 0;
     z-index: 4;
 }
 .headlisttwo {
@@ -364,7 +369,7 @@ nav {
     list-style-type: none;
  }
  .galleryHead {
-    margin:100px auto 50px;
+    margin:5% auto 3%;
     width: 50%;
     font-size: 30px;
     font-family: 'Play', sans-serif;
@@ -377,35 +382,46 @@ nav {
     padding-left: 0;
 }
 }
+@media only screen and (max-width: 1230px){
+#rapTwo {
+    margin: 26% 0 20px 100px;
+    width: 300px;
+    height: 120px;
+    z-index: 2;
+    }
+    
+}
 @media only screen and (max-width: 1065px){
+#meaAndMiddle {
+    flex-direction: column;
+    }
+/* #meaCulpaContainer, #headerMiddle{
+width: 100%;    
+} */
 
+#rapOne {
+    margin: 0 0 0 20px;
+}
+#lowerHeaderAndListBox {
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+      
 header {
     background-size: 90%;
-    height: 100vh;
     margin-bottom: 15px;
 }
 
-#headerMiddle {
-    display: flex;
-    flex-direction: column-reverse;
-}
-#rapOne {
-    left: 15px;
-    top: 220px;
-}
 #meaculpa {
-    margin: 55px 600px 20px 20%;
+    /* margin: 55px 550px 20px 10%; */
+    margin: 55px 200px 20px 10%;
 }
+
 #rapTwo {
-    margin: 160px 0 0 200px;
+    margin: 20px 0 0 20px;
     width: 300px;
 }
-#listbox {
-    left: 20px;
-    bottom:200px;
-    width: 200px;
-}
-.headlisttwo ul {
+ .headlisttwo ul {
     list-style-image: url(imgs/díra-g_s.gif);
 }
 .headlistthree ul li {
@@ -416,23 +432,75 @@ header {
     width: 120px;
     font-size: 14px;
 }
+#listbox {
+    margin: 0;
+    padding: 0;
+    width: auto;    
 }
-    @media only screen and (max-width: 790px){
-#rapOne {
-    left: 15px;
-    top: 210px;
+#lowerHeader {
+    width: auto;
 }
-#rapTwo {
-    margin: 180px 0 0 200px;
+.headlisttwo {
+    margin-left: 30px;
 }
 .galleryHead {
-    font-size: 20px;
+    margin-top: 130px;
 }
-#meaculpa {
-    width: 30%;
+}
+@media only screen and (max-width: 900px){
+#rapOne {
+    height: 100px;    
+}
+#rapTwo, #rapOne {
+        font-size: 12px;
+        margin-bottom: 10px;
+        width: 270px;
+    }
+#rapTwo {
+        height: 80px;
+        margin-top: 0;
+    }
+#meaAndMiddle {
+    margin: 65px 0 70px;
 }
 
 }
+@media only screen and (max-width: 880px){
+#listbox {
+    justify-content:start;
+    margin-top: -30px;
+}
+#meaAndMiddle {
+    margin: 65px 0 30px;
+}
+#lowerHeaderAndListBox {
+    margin-top: 30px;
+    }
+#meaculpa {
+    margin: 5px 50px 20px 10%;
+}
+
+}
+@media only screen and (max-width: 790px){
+.galleryHead {
+    font-size: 20px;
+}
+#meaAndMiddle {
+    margin: 65px 0 100px;
+}
+
+}
+@media only screen and (max-width: 700px){
+    #meaAndMiddle {
+    margin: 10% 0 0;
+    flex-direction: row;
+            }
+            #lowerHeaderAndListBox {
+               margin-top: 0;
+            }
+            
+}
+
 @media only screen and (max-width: 650px){
 header {
     background-size: 95%;
@@ -440,34 +508,113 @@ header {
 .headlisttwo ul li {
     padding-bottom: 5px;
 }
+#meaAndMiddle {
+    margin: 45px 0 0;
+            }
+            #rapOne {
+                margin-left: 0;
+            }
 }
-@media only screen and (max-width: 530px){
-        #listbox {
-    bottom: 50px;
+@media only screen and (max-width: 580px){
+#meaAndMiddle {
+    flex-direction: column;
+    margin: 40px 0 18%;
 }
-    #rapTwo {
-    margin: 200px 0 0 15px;
+#rapOne {
+    margin-left: 20px;
 }
-#rapTwo, #rapOne {
-    font-size: 12px;
-    width: 270px;
-    height: 110px;
+
+}
+
+
+@media only screen and (max-width: 560px){
+#meaculpa {
+    margin-bottom: 3%;
+}
+   #rapTwo {
+    margin-left: 0;
+   }  
+   .headlisttwo {
+    margin-left: 10px;
+   }    
+}
+
+@media only screen and (max-width: 490px){
+    
+#lowerHeaderAndListBox {
+    flex-direction: column-reverse;
+}
+
+#lowerHeaderAndListBox {
+    margin-top: 0px;
+}
+#listbox {
+    padding-top: 10px;
+}
+#rapOne {
+    margin-bottom: 20px;
+}
+#rapTwo {
+    margin-left: 20px;
+   }  
+          
+}
+@media only screen and (max-width: 440px){
+    #meaAndMiddle {
+        margin-top: 0px;
 }
 .galleryHead {
-    margin:200px auto 10px;
+    margin-top: 140px;
+}  
+#listbox {
+   margin-bottom: 50px;
 }
-}
-@media only screen and (max-width: 430px){
-#meaculpa {
-    margin-top: 40px;
-}
-}
-/* gallery */
 
+}
+@media only screen and (max-width: 370px){
+    #meaAndMiddle {
+        margin-top: 60px;
+        margin-bottom: 0px;
+}
+#meaculpa {
+    margin-bottom: 50%;
+    margin-right: 0;
+}
+.galleryHead {
+    margin-top: 140px;
+}  
+#listbox {
+    margin-bottom: 110px;
+ }
+ 
+}
+
+@media only screen and (max-width: 330px){
+     
+#lowerHeaderAndListBox {
+    margin-bottom: 50px;
+}
+#listbox {
+    margin-bottom: 90px;
+ }
+ 
+}
+
+/* gallery */
+.small {
+    color: #000;
+    font-size: 10px;
+
+}
 #gallery {
     height: 100vh;
     background-size: cover;
     display: flex;
+}
+.gallery {
+    background-image:url("imgs/LištaC.jpg");
+    height: 100vh;
+    background-size: cover;
 }
 
 .sideGalleryL{
@@ -477,12 +624,11 @@ header {
     margin-bottom: 90px;
     padding: 0 0 20px 10px;
 }
-
 .sideGalleryL img {
     width: 90%;
     object-fit: contain;
   }
-  
+
 #galleryWholeRight {
     width: 75%;
     display: block;
@@ -499,7 +645,7 @@ position: relative;
 .upperGallery img{
     width: 95%;
   }
-  
+
 #galleryMain {
     display: flex;
     height: 400px;
@@ -508,6 +654,7 @@ position: relative;
 #displayContainer {
     margin: 0 10px;
     width: 100%;
+
   }
 
 #display-el {
@@ -519,6 +666,8 @@ position: relative;
     background-size:contain;
     background-repeat: no-repeat;
     cursor: pointer;
+    /* background-image:url("../imgs/LištaC.jpg") ; */
+
 }
 
 #message-el {
@@ -526,8 +675,9 @@ position: relative;
     padding: 0 15px;
     margin:5px;
     background:rgba(156, 155, 155, 0.247);
-}
 
+
+}
 .sideGalleryR {
     display: flex;
     flex-wrap: wrap;
@@ -538,7 +688,7 @@ position: relative;
     width: 90%;
     object-fit: contain;
 }
-  
+
 .sideGalleryR .picContainer {
     margin-bottom: 30px;
 }
@@ -592,19 +742,19 @@ img {
     justify-content: center;
     align-items: center;
   }
-  
+
   .w1 {
     max-width: 75%;
   }
-  
+
   .w2 {
     max-width: 80%;
   }
-  
+
   .w3 {
     max-width: 85%px;
   }
-  
+
 #displayScreen {
     display: none;
 }
@@ -617,14 +767,14 @@ img {
     left: 30px;
 }
 @media only screen and (max-width: 1300px){
-#gallery {
+#gallery, .gallery{
     display: none;
 }
 /* gallery when responsive */
 #displayScreen {
     display: flex;
     justify-content: space-around;
-    background:url('imgs/lištaC.jpg');
+    background:url('imgs/LištaC.jpg');
     background-size: cover;
     padding: 20px 0;
     position: relative;
@@ -735,6 +885,7 @@ img {
 background: #009999;
 display: flex;
 position: relative;
+min-height: 100vh;
 }
 /* table */
 #chart {
@@ -747,7 +898,7 @@ position: relative;
 table{
     width: 650px;
     text-align: center;
-    margin:0 25px;
+    margin:0 25px 30px;
     border-collapse: collapse;
 }
 th{
@@ -772,12 +923,12 @@ td, th{
     color: seashell;
     font-size: 20px;
 }
-#rapFive {
+/* #rapFive {
     margin: 10px 30px 30px 30px;
     padding: 20px;
     background: rgba(255, 255, 255, 0.384);
     color: #fff;
-}
+} */
 /* map */
 #map {
     padding: 30px;
@@ -785,78 +936,27 @@ td, th{
 #mapAlt {
     display: none;
      }
-
-/* countdown */
-#countdown {
-    border: 1px solid #fff;
-    width:500px;
-    height: 100px;
-    margin-top: 10px;
-    text-align: center;
-    color: seashell;
-}
-#time-left {
-    font-size: 30px;
-}
-#break {
-    display: none;
-}
-/* contact-form */
+/* contact */
 #contact {
-    margin: 20px 0 20px 50px;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
     width: 600px;
     height: 320px;
-    border: 1px solid #fff;
-}
-.f {
-    text-align: center;
-}
-.container {
-    width: auto;
-}
-.f h2 {
-    padding: 15px 0;
-    margin: 0;
-}
-.f input[type="text"],
-.f textarea {
-    display: block;
-    font-size: 16px;
-    width: 70%;
-    margin: 0 auto 5px;
-    border: 1px solid#dfdfdf;
-}
-.f textarea {
-    height: 120px;
-}
-.f input[type="submit"] {
-    font-size: 15px;
-    background: #48f21d;
-    color: #fff;
-    padding: 7px 15px;
-    margin: px 0;
-    border: 2px solid #dfdfdf;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 10px;
-    letter-spacing: 3px;
-}
-.f input[type="submit"]:hover {
-    color: #dfdfdf;
-    background: transparent;
-    cursor: pointer;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 }
 @media only screen and (max-width: 1400px){
-#info {
-   flex-direction: column-reverse;
-   padding-bottom: 20px;
+    #info {
+    flex-direction: column-reverse;
+    padding-bottom: 20px;
 }
 .vertical {
-    margin: 0 auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100vh;
 }
 #map {
     margin: auto;
@@ -877,9 +977,14 @@ table {
 }
 #contact {
     margin:30px auto;
-    width: 100%;
 }
 
+}
+@media only screen and (max-width: 1200px){
+    .text {
+        width: 65vw;
+    }
+     
 }
 @media only screen and (max-width: 730px){
 .vertical {
@@ -890,6 +995,13 @@ table {
     height: auto;
     padding: 5px;
 }
+#contact img {
+width: 90vw;
+    }
+#contact h2 {
+font-size: 16px;
+    }
+    
 #map {
    display: none;
     }
@@ -898,13 +1010,16 @@ table {
    display: flex;
    justify-content: center;
 }
-.text {
-    width: 75vw;
-    margin:auto;
-}
 
 }
+
 @media only screen and (max-width: 440px){
+#contact h2 {
+    margin: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+
 #streight{
     display: none;
 }
@@ -921,6 +1036,7 @@ table {
 footer{
     background: #48f21d96;
     position: relative;
+    height: 100vh;
 }
 #noha {
     display: flex;
@@ -930,7 +1046,7 @@ footer{
     color: rgb(13, 128, 122);
     justify-content: center;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 200px;
 }
 .seclistone {
     display: flex;
@@ -945,6 +1061,10 @@ footer{
     font-size: 28px;
     justify-content: end;
 }
+#construction a:hover {
+color: #009999;
+font-size: 32px;
+}
 #carrotContainer {
     display: flex;
 }
@@ -958,6 +1078,9 @@ footer{
     color: rgb(97, 95, 95);
     margin-left: 6px;
     align-items: center;
+}
+#myName:hover {
+    color: rgb(212, 56, 8);
 }
 #name i {
     background: chocolate;
@@ -991,20 +1114,27 @@ footer{
 #noha {
     line-height: 100px;
     font-size: 8vw;
-    padding: 0 2%;
+    padding-top: 230px;
 }
 .seclistone {
     padding-left: 13%;
 }
-
+    
 }
 @media only screen and (max-width: 550px) {
     #construction {
     font-size: 5vw;
    }
+   #construction a:hover {
+    font-size: 6vw;
+    }
+
    #name span{
     line-height: 20px;
     font-size: 18px;
+}
+#noha {
+    padding: 230px 100px 0;
 }
 
 }
